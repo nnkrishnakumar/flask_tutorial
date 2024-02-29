@@ -6,9 +6,10 @@ app=Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-@app.route('/krishna')
+@app.route('/about')
 def krishna():
-    return "Hello, krishna"
+    name ="krishna"
+    return render_template("about.html",name=name)
 app.run()
 
 
